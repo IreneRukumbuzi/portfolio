@@ -1,0 +1,462 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,500;1,600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+section{
+    padding: 70px;
+}
+
+.container{
+    background: url(../assets/showcase.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container h2{
+    font-size: 50px;
+    color: white;
+    line-height: 1.2em;
+    font-weight: 300;
+}
+.container h2 span{
+    font-size: 50px;
+    font-weight: 700;
+}
+.container h3{
+    font-size: 25px;
+    color: white;
+    line-height: 60px;
+}
+.btn{
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #2196f3;
+    padding: 10px 30px;
+    color: white;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+.btn:hover{
+    color: #111;
+    transition: .5s;
+    cursor: pointer;
+}
+.viewMoreBtns{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#viewMore{
+    border: none;
+    outline: none;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    padding: 10px 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: .5s;
+}
+
+.sticky{
+    background-color: #fff;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+.sticky .logo{
+    color: #111;
+}
+
+header .logo{
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 24px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    color: #fff;
+}
+header ul{
+    display: flex;
+    position: relative;
+}
+header ul li{
+   position: relative;
+   list-style: none;
+}
+header ul li a{
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    margin: 0 15px;
+    font-size: 18px;
+}
+header ul li a:hover{
+    color: #2196f3;
+    transition: .5s;
+}
+.sticky ul li a{
+    color: #111;
+}
+.heading{
+    text-align: center;
+    margin-bottom: 30px;
+    color: #111;
+    width: 100%;
+}
+.heading h2{
+    font-size: 30px;
+    font-weight: 600px;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+}
+.contentBox{
+    padding-right: 30px;
+}
+.content h3{
+  font-size: 24px;
+  margin-bottom: 10px;  
+}
+.width50{
+    min-width: 50%;
+}
+.content .img{
+    width: 45vw;
+    height: 60vh;
+}
+
+.services{
+    background: #111;
+}
+.servicesBox img{
+    width: 100px;
+}
+
+.white{
+    color: #fff;
+}
+
+.services .content{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+.services .content .servicesBox{
+    padding: 20px 10px;
+    max-width: 280px;
+    color: #fff;
+    background: #222;
+    margin: 20px;
+    text-align: center;
+    transition: .5s;
+}
+
+
+.services .content .servicesBox:hover{
+    background-color: #2b70a8;
+    transform: scale(1.1);
+    transition: .5s;
+}
+.services .content .servicesBox h2{
+    font-size: 18px;
+}
+
+.testimonials{
+    display: #f7f7f7;
+}
+.testimonials .content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.testimonials .content .testBox{
+    background: #2196f3;
+    padding: 60px 50px;
+    margin: 20px;
+    transition: .5s;
+    max-width: calc(50% - 40px);
+}
+.testBox:hover{
+    transform: scale(1.05);
+}
+.testBox p{
+    color: white;
+    font-size: 16px;
+    font-weight: 300;
+}
+.testBox h3{
+    color: #fff;
+    font-size: 24px;
+    text-align: end;
+    line-height: 1em;
+    margin-top: 40px;
+    font-weight: 600;
+}
+.testBox h3 span{
+    font-size: 15px;
+    font-weight: 300;
+}
+.contact{
+    background: #111;
+}
+
+.contact .formBox{
+    min-width: 60%;
+}
+
+.formBox form{
+    display: flex;
+    flex-direction: column;
+}
+
+form h3{
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+form button{
+    border: none;
+    outline: none;
+    width: 120px;
+    padding: 10px 30px;
+}
+
+form button:hover{
+    cursor: pointer;
+}
+.contactInfo{
+    min-width: 40%;
+    padding: 0 40px;
+}
+.contactInfo h3{
+    color: #fff;
+    font-size: 24px;
+}
+.text h4{
+    color: #2196f3;
+    font-size: 20px;
+}
+.text p{
+    color: #ffffffbd;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+form input{
+    outline: none;
+    font-size: 16px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background: #222;
+    border: none;
+    color: white;
+}
+form textarea{
+    resize: none;
+    height: 80px;
+    outline: none;
+    font-size: 16px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background: #222;
+    border: none;
+    color: white;
+}
+.box{
+    display: flex;
+
+}
+.icons{
+    filter: invert(1);
+    margin-right: 10px;
+}
+.icons img{
+   width: 18px;
+   display: flex;
+   top: 6px;
+   position: relative;
+   justify-content: center;
+   align-items: flex-start;
+}
+
+.text img{
+    margin: 10px 12px 10px 0;
+}
+.text img:hover{
+    transform: scale(1.1);
+    transition: .5s;
+    cursor: pointer;
+}
+
+.footer{
+    padding: 10px;
+    background: #000;
+    color: #fff;
+    text-align: center;
+}
+
+.social-links{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 35vh;
+    right: 30px;
+    z-index: 1;
+}
+
+.social-links img{
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    color: #f7f7f7;
+}
+
+.social-links img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: .5s;
+}
+/* Responsiveness */
+
+@media(max-width: 900px){
+    header, header .sticky{
+        padding: 20px 30px;
+        z-index: 1;
+        color: #111;
+        height: 70px;
+    }
+    .menu{
+        padding: 80px 40px;
+        position: fixed;
+        left: -100%;
+        top: 68px;
+        display: block;
+        text-align: center;
+        height: 100vh;
+        width: 100%;
+        transition: .5s;
+        background: #fff;
+        border-top: 3px solid rgba(0, 0, 0, 0.2);
+    }
+    .on{
+        left: 0;
+    }
+
+    header ul li a {
+        color: #111;
+        padding: 10px;
+        font-size: 24px;
+    }
+    .toggle{
+        width: 40px;
+        height: 40px;
+        background: url(../assets/menu.png);
+        background-position: center;
+        background-size: 32px;
+        cursor: pointer;
+        background-repeat: no-repeat;
+    }
+
+    header .active{
+        background: url(../assets/close.png);
+        background-position: center;
+        background-size: 25px;
+        cursor: pointer;
+        background-repeat: no-repeat;
+    }
+    .sticky .toggle{
+        filter: invert(1);
+    }
+    section{
+        padding: 80px 20px;
+    }
+    .container{
+        padding: 70px 30px;
+    }
+    .container h2{
+        font-size: 30px;
+    }
+    .container h2 span{
+        font-size: 35px;
+        line-height: 0.6em;
+    }
+    .container h3{
+        font-size: 18px;
+        line-height: 40px;
+    }
+    .btn{
+        padding: 10px 20px;
+        font-size: 15px;
+        margin-top: 10px;
+    }
+    .heading h2{
+        font-size: 24px;
+    }
+    .content{
+        flex-direction: column;
+    }
+    .contentBox h3{
+        font-size: 18px;
+    }
+    .content .img{
+        width: 80vw;
+        height: 30%;
+    }
+    .width50{
+        margin-bottom: 20px;
+    }
+    .testimonials .content .testBox{
+        padding: 20px 15px;
+        margin: 10px;
+        transition: .5s;
+        max-width: calc(100% - 40px);
+    }
+    .testBox h3{
+        margin-top: 10px;
+    }
+    .testBox h3{
+        font-size: 16px;
+        line-height: 1em;
+        margin-top: 20px;
+    }
+    .contactInfo{
+        min-width: 40px;
+        padding: 0 10px;
+    }
+    .contactInfo h4{
+        font-size: 24px;
+    }
+    .contactInfo p{
+        font-size: 18px;
+    }
+    form{
+        margin-top: 30px;
+    }
+    .icons img{
+        width: 18px;
+        top: 8px;
+        position: relative;
+     }
+     
+}
