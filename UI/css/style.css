@@ -325,6 +325,12 @@ form textarea{
     z-index: 1;
 }
 
+
+.servicesBox img{
+    width: 60px;
+    height: 60px;
+}
+
 .social-links img{
     width: 30px;
     height: 30px;
@@ -457,6 +463,10 @@ form textarea{
         width: 18px;
         top: 8px;
         position: relative;
+     }
+
+     .social-links{
+         display: none;
      }
      
 }
