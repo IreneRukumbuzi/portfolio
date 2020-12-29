@@ -3,8 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" type="image/svg" href="./UI/assets/i-link-2.svg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
+    <title>Irene Rukumbuzi</title>
     <link rel="stylesheet" href="./UI/css/style.css">
 </head>
 
@@ -23,7 +24,7 @@
     <section class="container" id="home">
         <div class="textBox">
             <h2>Hello, I'm <br> <span>Rukumbuzi Irene</span></h2>
-            <h3>I am a full-stack Web Developer.</h3>
+            <h3 class="effects animat">I am a full-stack Web Developer.</h3>
             <a href="#about" class="btn">About Me</a>
         </div>
     </section>
@@ -125,7 +126,7 @@
                  I will get back to you as soon as possible. 😉
             </p>
         </div>
-        <div class="content">
+        <div class="contactDivs">
             <div class="contactInfo">
                 <h3>Contact Info</h3>
                 <div class="contactInfoBox">
@@ -147,26 +148,16 @@
                             <p>+250-785-088-582</p>
                         </div>
                     </div>
-                    <div class="box">
-                        <div class="icons">
-                            <img src="./UI/assets/mail.png" alt="">
-                        </div>
-                        <div class="text">
-                            <h4>Email</h4>
-                            <p>rukkirene21@gmail.com</p>
-                        </div>
-                    </div>
                 </div>
             </div>
 
             <div class="formBox">
-                <form name="my-form" method="post" data-netlify="true">
-                    <h3>Message Me</h3>
-                    <input type="text" placeholder="Full Name" required>
-                    <input type="email" placeholder="Email" required>
-                    <textarea placeholder="Message"></textarea>
-                    <button type="submit" class="btn">Send</button>
-                </form>
+                <h3>Message Me</h3>
+                <div class="text">
+                    <h4>Email</h4>
+                    <p>rukkirene21@gmail.com</p>
+                </div>
+                <button class="btn"><a href="mailto:rukkirene21@gmail.com?Subject=Hello%20From%20Your%20buttonortfolio">Email Me</a></button>
             </div>
         </div>
     </section>

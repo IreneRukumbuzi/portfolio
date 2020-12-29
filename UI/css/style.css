@@ -85,6 +85,39 @@ header{
     color: #111;
 }
 
+
+
+.effects{
+    margin: 30px 0 0 0;
+    overflow: hidden;
+    white-space: nowrap;
+    transform: translateY(-50%);
+    border-right: 4px solid #fff;
+    animation: typewriter 6s steps(50) infinite;
+}
+
+@keyframes typewriter {
+    0%, 10%, 100%{
+        width: 0;
+        border-right-color: (255, 255, 255, 0.75);
+    }
+
+    70%, 90%{
+        width: 100%; 
+        border-right-color: transparent; 
+    }
+}
+
+@keyframes blinkTextCursor {
+    from {
+        border-right-color: (255, 255, 255, 0.75);
+    }
+
+    to {
+        border-right-color: transparent; 
+    }
+}
+
 header .logo{
     text-transform: uppercase;
     text-decoration: none;
@@ -172,6 +205,10 @@ header ul li a:hover{
     transition: .5s;
 }
 
+.contactDivs{
+    display: flex;
+    justify-content: space-around;
+}
 
 .services .content .servicesBox:hover{
     background-color: #2b70a8;
@@ -221,15 +258,6 @@ header ul li a:hover{
     background: #111;
 }
 
-.contact .formBox{
-    min-width: 60%;
-}
-
-.formBox form{
-    display: flex;
-    flex-direction: column;
-}
-
 form h3{
     color: #fff;
     margin-bottom: 20px;
@@ -245,10 +273,7 @@ form button{
 form button:hover{
     cursor: pointer;
 }
-.contactInfo{
-    min-width: 40%;
-    padding: 0 40px;
-}
+
 .contactInfo h3{
     color: #fff;
     font-size: 24px;
@@ -343,6 +368,24 @@ form textarea{
     transform: scale(1.1);
     transition: .5s;
 }
+.formBox button{
+    border: none;
+}
+
+.formBox a:hover{
+    transition: .5s;
+    color: #000000;
+}
+
+.formBox h3{
+    color: #fff;
+}
+
+.formBox a{
+    text-decoration: none;
+    color: #fff;
+}
+
 /* Responsiveness */
 
 @media(max-width: 900px){
@@ -469,4 +512,7 @@ form textarea{
          display: none;
      }
      
+     .contactDivs{
+         flex-direction: column;
+     }
 }
